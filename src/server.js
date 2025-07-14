@@ -24,6 +24,10 @@ app.use(morgan('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+app.get('/', (req, res) => {
+  res.json({ message: 'Quiz App API', version: '1.0.0', health: '/health' });
+});
+
 app.get('/health', (req, res) => {
   res.json({ status: 'OK', message: 'Quiz App API is running' });
 });
