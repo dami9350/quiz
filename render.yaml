@@ -21,4 +21,4 @@ services:
       - key: FIREBASE_CLIENT_EMAIL
         sync: false
       - key: ALLOWED_ORIGINS
-        value: https://quiz-app.com
+        value: https://quiz-app.com,http://localhost:3000,http://localhost:8080,http://localhost:5000,http://localhost:56853,http://localhost:55824,http://localhost:50000,http://localhost:60000
